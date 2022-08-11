@@ -1,6 +1,6 @@
 <template>
   <div>
-    <input v-model="store.user" />
+    <h1>{{ store.user }}</h1>
   </div>
 </template>
 
@@ -8,6 +8,7 @@
 import { useStore } from '@/store';
 
 const store = useStore();
+console.log(store.user);
 </script>
 
 <style scoped></style>
